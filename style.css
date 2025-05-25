@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.cabecalho {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.cabecalho p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: #00d8ff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.secao {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.secao img {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.habilidades .icones {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.habilidades .icones div {
+  text-align: center;
+}
+
+.habilidades img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+}
+
+.habilidades img:hover {
+  transform: scale(1.1);
+}
