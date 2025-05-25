@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio de Jonas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container">
+      <h1>Olá, eu sou o Jonas!</h1>
+      <p>Tenho 18 anos e estou começando minha jornada como programador.</p>
+      <nav class="menu">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="sobre" class="secao">
+    <h2>Sobre mim</h2>
+    <p>Sou um estudante apaixonado por tecnologia e programação. Meu objetivo é aprender, criar e crescer na área de desenvolvimento de software. Atualmente, estudo HTML, CSS e JavaScript.</p>
+    <img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/laptop-791068_1280.jpg" alt="Imagem ilustrativa de programação">
+  </section>
+
+  <section id="habilidades" class="secao habilidades">
+    <h2>Minhas Habilidades</h2>
+    <div class="icones">
+      <div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+        <p>HTML5</p>
+      </div>
+      <div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+        <p>CSS3</p>
+      </div>
+      <div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <p>JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="secao">
+    <h2>Meus Projetos</h2>
+    <div class="cards">
+      <div class="card" onclick="abrirModal('Projeto 1', 'Meu primeiro projeto com HTML e CSS.')">
+        <h3>Projeto 1</h3>
+        <p>Site simples com HTML e CSS.</p>
+      </div>
+      <div class="card" onclick="abrirModal('Projeto 2', 'Um pequeno projeto usando JavaScript.')">
+        <h3>Projeto 2</h3>
+        <p>Mini calculadora em JS.</p>
+      </div>
+      <div class="card" onclick="abrirModal('Projeto 3', 'Página responsiva criada no curso.')">
+        <h3>Projeto 3</h3>
+        <p>Design adaptável para celulares.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="secao">
+    <h2>Contato</h2>
+    <p>Você pode me encontrar no GitHub: <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></p>
+  </section>
+
+  <footer class="rodape">
+    <p>© 2025 Jonas | Portfólio criado com HTML, CSS e JavaScript</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <h2 id="modalTitulo"></h2>
+      <p id="modalDescricao"></p>
+    </div>
+  </div>
+
+  <script>
+    function abrirModal(titulo, descricao) {
+      document.getElementById('modalTitulo').innerText = titulo;
+      document.getElementById('modalDescricao').innerText = descricao;
+      document.getElementById('modal').style.display = 'block';
+    }
+
+    function fecharModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('modal')) {
+        fecharModal();
+      }
+    }
+  </script>
+</body>
+</html>
